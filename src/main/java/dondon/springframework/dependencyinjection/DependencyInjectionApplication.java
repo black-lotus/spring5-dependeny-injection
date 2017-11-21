@@ -1,6 +1,9 @@
 package dondon.springframework.dependencyinjection;
 
+import dondon.springframework.dependencyinjection.controllers.ConstructorInjectedController;
 import dondon.springframework.dependencyinjection.controllers.MyController;
+import dondon.springframework.dependencyinjection.controllers.PropertyInjectedController;
+import dondon.springframework.dependencyinjection.controllers.SetterInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -13,5 +16,9 @@ public class DependencyInjectionApplication {
 
 		MyController myController = (MyController) context.getBean("myController");
 		myController.hello();
+
+		System.out.println(context.getBean(PropertyInjectedController.class).sayHello());
+		System.out.println(context.getBean(SetterInjectedController.class).sayHello());
+		System.out.println(context.getBean(ConstructorInjectedController.class).sayHello());
 	}
 }
