@@ -1,14 +1,19 @@
 package dondon.springframework.dependencyinjection.controllers;
 
+import dondon.springframework.dependencyinjection.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class MyController {
 
-    public String hello() {
-        System.out.println("Hello!!");
+    private GreetingService greetingService;
 
-        return "hello";
+    public MyController(GreetingService greetingService) {
+        this.greetingService = greetingService;
+    }
+
+    public String hello() {
+        return greetingService.sayGreeting();
     }
 
 }
