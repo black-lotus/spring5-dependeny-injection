@@ -1,4 +1,4 @@
-package dondon.springframework.services;
+package dondon.springframework.dependencyinjection.services;
 
 public interface GreetingRepository {
 

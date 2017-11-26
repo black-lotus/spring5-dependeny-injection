@@ -1,6 +1,6 @@
 package dondon.springframework.dependencyinjection.controllers;
 
-import dondon.springframework.services.GreetingServiceImpl;
+import dondon.springframework.dependencyinjection.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
