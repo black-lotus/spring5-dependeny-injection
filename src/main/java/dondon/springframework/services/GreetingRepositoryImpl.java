@@ -1,4 +1,4 @@
-package dondon.springframework.dependencyinjection.services;
+package dondon.springframework.services;
 
 import org.springframework.stereotype.Component;
 

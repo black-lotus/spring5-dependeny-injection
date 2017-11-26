@@ -1,6 +1,6 @@
 package dondon.springframework.dependencyinjection.controllers;
 
-import dondon.springframework.dependencyinjection.services.GreetingService;
+import dondon.springframework.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller
