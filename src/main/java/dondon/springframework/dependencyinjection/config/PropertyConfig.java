@@ -13,10 +13,10 @@ import org.springframework.core.env.Environment;
 
 @Configuration
 //@PropertySource({"classpath:datasource.properties", "classpath:jms.properties"})
-@PropertySources({
-        @PropertySource("classpath:datasource.properties"),
-        @PropertySource("classpath:jms.properties")
-})
+//@PropertySources({
+//        @PropertySource("classpath:datasource.properties"),
+//        @PropertySource("classpath:jms.properties")
+//})
 
 public class PropertyConfig {
 
@@ -66,10 +66,10 @@ public class PropertyConfig {
         return jmsBroker;
     }
 
-    public static PropertySourcesPlaceholderConfigurer properties() {
-        PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer();
-
-        return configurer;
-    }
+//    public static PropertySourcesPlaceholderConfigurer properties() {
+//        PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer();
+//
+//        return configurer;
+//    }
 
 }
