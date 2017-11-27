@@ -30,7 +30,9 @@ public class PropertyConfig {
         FakeDataSource fakeDataSource = new FakeDataSource();
 
         // user environment variable
-        // fakeDataSource.setUser(environment.getProperty("FAKE_USERNAME"));
+//        fakeDataSource.setUser(environment.getProperty("FAKE_USERNAME"));
+//        fakeDataSource.setUrl(environment.getProperty("FAKE_PASSWORD"));
+//        fakeDataSource.setUser(environment.getProperty("FAKE_DBURL"));
 
         fakeDataSource.setUser(user);
         fakeDataSource.setPassword(password);
