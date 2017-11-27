@@ -4,6 +4,7 @@ import dondon.springframework.dependencyinjection.controllers.ConstructorInjecte
 import dondon.springframework.dependencyinjection.controllers.MyController;
 import dondon.springframework.dependencyinjection.controllers.PropertyInjectedController;
 import dondon.springframework.dependencyinjection.controllers.SetterInjectedController;
+import dondon.springframework.dependencyinjection.examplebeans.FakeDataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -14,6 +15,10 @@ public class DependencyInjectionApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(DependencyInjectionApplication.class, args);
+
+		// external properties
+		FakeDataSource fakeDataSource = context.getBean(FakeDataSource.class);
+		System.out.println("external properties :: user => " + fakeDataSource.getUser());
 
 		MyController myController = (MyController) context.getBean("myController");
 
