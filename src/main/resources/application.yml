@@ -1,0 +1,5 @@
+fake:
+  jms:
+    username: JMS Username
+    password: JMS Password
+    url: http://jms.url
