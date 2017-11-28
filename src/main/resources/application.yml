@@ -3,3 +3,10 @@ fake:
     username: JMS Username
     password: JMS Password
     url: http://jms.url
+
+---
+spring:
+  profiles: de
+fake:
+  jms:
+    username: JMS Username from German
